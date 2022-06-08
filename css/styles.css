@@ -1,0 +1,99 @@
+body {
+  max-width: 1800px;
+  margin: 0 auto 0 auto;
+}
+
+body a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 5% 0 5%;
+}
+
+header img {
+  height: 150px;
+  width: 200px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin-top: 50px;
+}
+
+header ul li {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+header ul li a {
+  color: #C3AED5;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+main #banner {
+  max-height: 400px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: #41635E;
+  padding: 10%;
+  margin-top: 80px;
+}
+
+main #presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 100px 5% 100px 8%;
+}
+
+main #presentation div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #presentation div h2 {
+  font-size: 65px;
+  font-weight: normal;
+  color: #41635E;
+  margin-bottom: 0;
+}
+
+main #presentation div p {
+  width: 90%;
+  font-size: 25px;
+  color: grey;
+}
+
+main #presentation img {
+  height: 400px;
+}
+/*# sourceMappingURL=styles.css.map */
