@@ -1,6 +1,6 @@
 $color--1: #84D7BD;
 $color--2: #41635E;
-$color--3: #C3AED5;
+$color--3: #6D478A;
 $color--4: #EAE3F2;
 $color--5: #A40E4C;
 
@@ -9,6 +9,16 @@ body {
     margin: 0 auto 0 auto;
     a {
         text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 65px;
+        font-weight: normal;
+        color: #41635E;
+        margin-bottom: 0;
     }
 }
 
@@ -22,7 +32,6 @@ header {
     }
     ul {
         display: flex;
-        flex-direction: row;
         list-style: none;
         margin-top: 50px;
         li {
@@ -30,17 +39,18 @@ header {
             font-size: 22px;
             a {
                 color: $color--3;
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
     }
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     #banner {
         max-height: 400px;
+        width: 100%;
         font-size: 30px;
         color: white;
         text-align: center;
@@ -56,12 +66,7 @@ main {
         div {
             display: flex;
             flex-direction: column;
-            h2 {
-                font-size: 65px;
-                font-weight: normal;
-                color: #41635E;
-                margin-bottom: 0;
-            }
+            
             p {
                 width: 90%;
                 font-size: 25px;
@@ -70,6 +75,43 @@ main {
         }
         img {
             height: 400px;
+        }
+    }
+    #philosophie {
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 100px 0 300px 0;
+            padding: 0;
+            li {
+                margin: 0 50px 0 50px;
+                font-size: 40px;
+                color: red;
+            }
+        }
+    }
+    #prestations {
+        ul {
+            display: flex;
+            list-style: none;
+            margin-top: 100px;
+            padding: 0;
+            li {
+                height: 300px;
+                width: 300px;
+                text-align: center;
+                font-size: 40px;
+                background-color: #41635E;
+                padding: 40px;
+                border-radius: 100px;
+                margin: 0 50px 0 50px;
+                &:nth-child(2) {
+                    background-color: $color--3;
+                }
+                a {
+                    color: white;
+                }
+            }
         }
     }
 }

@@ -7,6 +7,18 @@ body a {
   text-decoration: none;
 }
 
+body a:hover {
+  text-decoration: underline;
+}
+
+body h2 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: normal;
+  color: #41635E;
+  margin-bottom: 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,10 +38,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   list-style: none;
   margin-top: 50px;
 }
@@ -40,15 +48,25 @@ header ul li {
 }
 
 header ul li a {
-  color: #C3AED5;
+  color: #6D478A;
 }
 
-header ul li a:hover {
-  text-decoration: underline;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main #banner {
   max-height: 400px;
+  width: 100%;
   font-size: 30px;
   color: white;
   text-align: center;
@@ -80,13 +98,6 @@ main #presentation div {
           flex-direction: column;
 }
 
-main #presentation div h2 {
-  font-size: 65px;
-  font-weight: normal;
-  color: #41635E;
-  margin-bottom: 0;
-}
-
 main #presentation div p {
   width: 90%;
   font-size: 25px;
@@ -95,5 +106,48 @@ main #presentation div p {
 
 main #presentation img {
   height: 400px;
+}
+
+main #philosophie ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 100px 0 300px 0;
+  padding: 0;
+}
+
+main #philosophie ul li {
+  margin: 0 50px 0 50px;
+  font-size: 40px;
+  color: red;
+}
+
+main #prestations ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 100px;
+  padding: 0;
+}
+
+main #prestations ul li {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #41635E;
+  padding: 40px;
+  border-radius: 100px;
+  margin: 0 50px 0 50px;
+}
+
+main #prestations ul li:nth-child(2) {
+  background-color: #6D478A;
+}
+
+main #prestations ul li a {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
