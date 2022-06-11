@@ -1,20 +1,63 @@
+@font-face {
+  font-family: minigarden;
+  src: url(../fonts/minigarden.otf);
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px) scale(1);
+            transform: translateX(-1000px) scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px) scale(1);
+            transform: translateX(-1000px) scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
 body {
   max-width: 1800px;
+  letter-spacing: 2px;
   margin: 0 auto 0 auto;
 }
 
 body a {
   text-decoration: none;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 body a:hover {
-  text-decoration: underline;
+  font-size: larger;
 }
 
 body h2 {
   text-align: center;
   font-size: 65px;
   font-weight: normal;
+  font-family: minigarden;
   color: #41635E;
   margin-bottom: 0;
 }
@@ -25,6 +68,13 @@ body ul {
   display: flex;
   list-style: none;
   padding: 0;
+  font-family: minigarden;
+}
+
+body p {
+  font-family: Verdana, sans-serif;
+  letter-spacing: 0;
+  font-size: 22px;
 }
 
 header {
@@ -51,12 +101,13 @@ header ul {
 }
 
 header ul li {
-  margin-left: 10px;
-  font-size: 22px;
+  margin-left: 20px;
+  font-size: 35px;
+  letter-spacing: 2px;
 }
 
 header ul li a {
-  color: #6D478A;
+  color: #C3AED5;
 }
 
 main {
@@ -83,6 +134,14 @@ main .banner {
   margin-top: 80px;
 }
 
+main .banner h1 {
+  font-family: minigarden;
+  letter-spacing: 3px;
+  font-weight: normal;
+  -webkit-animation: appear 1600ms ease;
+          animation: appear 1600ms ease;
+}
+
 main .banner--p2 {
   text-align: left;
 }
@@ -102,6 +161,12 @@ main .banner--p2 ul li {
 main .banner--p2 ul li a {
   font-size: 40px;
   color: white;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+}
+
+main .banner--p2 ul li a:hover {
+  font-size: 45px;
 }
 
 main #presentation {
@@ -133,7 +198,6 @@ main #presentation div {
 
 main #presentation div p {
   width: 90%;
-  font-size: 25px;
   color: grey;
 }
 
@@ -157,15 +221,8 @@ main #philosophie ul li {
           align-items: center;
   height: 100px;
   font-size: 40px;
-  color: white;
-  background-color: #A40E4C;
-  padding: 5px 10px 5px 10px;
-  border-radius: 40%;
+  color: #41635E;
   margin: 0 50px 0 50px;
-}
-
-main #philosophie ul li:nth-child(2) {
-  background-color: #84D7BD;
 }
 
 main #prestations ul {
@@ -185,7 +242,7 @@ main #prestations ul li {
   height: 300px;
   width: 300px;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   background-color: #41635E;
   padding: 40px;
   border-radius: 120px;
@@ -193,7 +250,7 @@ main #prestations ul li {
 }
 
 main #prestations ul li:nth-child(2) {
-  background-color: #6D478A;
+  background-color: #C3AED5;
 }
 
 main #prestations ul li a {
@@ -228,18 +285,16 @@ main #services_list div h2 {
   color: white;
   background-color: #41635E;
   padding: 40px;
-  border: 2px solid green;
   border-radius: 120px;
   margin: 0;
 }
 
 main #services_list div h2:nth-child(2) {
-  background-color: #6D478A;
+  background-color: #C3AED5;
 }
 
 main #services_list div p {
   width: 45%;
-  font-size: 25px;
   color: grey;
 }
 /*# sourceMappingURL=styles.css.map */
